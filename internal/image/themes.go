@@ -43,6 +43,7 @@ var themes = map[string]Theme{
 	"night-owl":        NightOwl,
 	"github-light":     GitHubLight,
 	"rose-pine":        RosePine,
+	"superman":         Superman,
 }
 
 func init() {
@@ -783,6 +784,32 @@ var (
 			color.RGBA{R: 33, G: 32, B: 46, A: 255},
 			color.RGBA{R: 64, G: 61, B: 82, A: 255},
 			color.RGBA{R: 82, G: 79, B: 103, A: 255},
+		},
+	}
+
+	Superman = Theme{
+		Name: "Superman",
+		Colors: []color.Color{
+			// Primary Superman colors
+			color.RGBA{R: 0, G: 61, B: 165, A: 255},  // Deep Superman Blue
+			color.RGBA{R: 200, G: 16, B: 46, A: 255}, // Superman Red
+			color.RGBA{R: 255, G: 215, B: 0, A: 255}, // Superman Gold/Yellow
+			// Secondary colors
+			color.RGBA{R: 30, G: 96, B: 196, A: 255},  // Bright Superman Blue
+			color.RGBA{R: 236, G: 45, B: 75, A: 255},  // Bright Superman Red
+			color.RGBA{R: 255, G: 235, B: 59, A: 255}, // Bright Yellow
+			// Complementary colors
+			color.RGBA{R: 240, G: 240, B: 240, A: 255}, // Light Silver
+			color.RGBA{R: 51, G: 51, B: 51, A: 255},    // Dark Gray
+			color.RGBA{R: 245, G: 245, B: 245, A: 255}, // Off White
+			color.RGBA{R: 25, G: 25, B: 25, A: 255},    // Near Black
+			// Additional shades
+			color.RGBA{R: 0, G: 38, B: 102, A: 255},    // Darker Blue
+			color.RGBA{R: 153, G: 0, B: 0, A: 255},     // Darker Red
+			color.RGBA{R: 204, G: 172, B: 0, A: 255},   // Darker Gold
+			color.RGBA{R: 102, G: 153, B: 255, A: 255}, // Light Blue
+			color.RGBA{R: 255, G: 102, B: 102, A: 255}, // Light Red
+			color.RGBA{R: 255, G: 255, B: 153, A: 255}, // Light Yellow
 		},
 	}
 )
